@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "HHAlertViewController"
   s.version      = "0.0.1"
-  s.summary      = "A short description of HHAlertViewController."
+  s.summary      = "A Very Beautiful AlertViewController."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "http://EXAMPLE/HHAlertViewController"
+  s.homepage     = "http://hughex.com"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -38,8 +38,8 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -52,9 +52,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "黃河" => "he.huang@fenrir-inc.com.cn" }
+  s.author             = { "黃河" => "richardhughes@live.cn" }
   # Or just: s.author    = "黃河"
-  # s.authors            = { "黃河" => "he.huang@fenrir-inc.com.cn" }
+  # s.authors            = { "黃河" => "richardhughes@live.cn" }
   # s.social_media_url   = "http://twitter.com/黃河"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,8 +63,8 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+  s.platform     = :ios
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/HHAlertViewController.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/HughesCuit/HHAlertViewController.git", :commit => "97cda07" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "HHAlertViewController/Source/*.{swift}"
+  # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -105,7 +105,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "HHAlertViewController/Source/*.{xib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
