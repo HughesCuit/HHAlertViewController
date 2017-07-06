@@ -25,6 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
+  it's a very beautiful alertController, and it's looks like the same as system alertController
                    DESC
 
   s.homepage     = "http://hughex.com"
@@ -63,7 +64,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  # s.platform     = :ios
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
