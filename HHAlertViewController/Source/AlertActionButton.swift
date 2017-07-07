@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AlertActionButton: UIButton {
+open class AlertActionButton: UIButton {
     var action: AlertAction = { _ in }
     var title = ""
     
@@ -34,7 +34,7 @@ class AlertActionButton: UIButton {
         return btn
     }
     
-    override var isHighlighted: Bool {
+    override open var isHighlighted: Bool {
         didSet{
             backgroundColor = isHighlighted ? #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.5) : #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         }

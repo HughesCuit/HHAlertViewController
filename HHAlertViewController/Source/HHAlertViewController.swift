@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HHAlertViewController: UIViewController {
+open class HHAlertViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
@@ -24,7 +24,7 @@ class HHAlertViewController: UIViewController {
         }
     }
     
-    override var modalTransitionStyle: UIModalTransitionStyle {
+    override open var modalTransitionStyle: UIModalTransitionStyle {
         set{
             
         }
@@ -32,7 +32,7 @@ class HHAlertViewController: UIViewController {
             return .crossDissolve
         }
     }
-    override var modalPresentationStyle: UIModalPresentationStyle {
+    override open var modalPresentationStyle: UIModalPresentationStyle {
         set{
             
         }
@@ -58,11 +58,11 @@ class HHAlertViewController: UIViewController {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         actionCollectionHeightConstraint.constant = 44.0 * CGFloat(actions.count)
         actionCollection.register(UICollectionViewCell.classForCoder(), forCellWithReuseIdentifier: "ActionCell")
@@ -81,10 +81,10 @@ class HHAlertViewController: UIViewController {
 
 }
 extension HHAlertViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return actions.count
     }
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ActionCell", for: indexPath)
         cell.contentView.addSubview(actions[indexPath.row])
         return cell

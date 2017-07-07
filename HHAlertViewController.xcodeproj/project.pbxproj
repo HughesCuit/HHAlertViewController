@@ -13,7 +13,6 @@
 		4FC7B81F1F0E40B90005F269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7B81D1F0E40B90005F269 /* LaunchScreen.storyboard */; };
 		4FC7B82C1F0E40D80005F269 /* AlertActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7B8271F0E40D80005F269 /* AlertActionButton.swift */; };
 		4FC7B82D1F0E40D80005F269 /* AlertActionButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7B8281F0E40D80005F269 /* AlertActionButton.xib */; };
-		4FC7B82E1F0E40D80005F269 /* HHAlertViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7B8291F0E40D80005F269 /* HHAlertViewController.podspec */; };
 		4FC7B82F1F0E40D80005F269 /* HHAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7B82A1F0E40D80005F269 /* HHAlertViewController.swift */; };
 		4FC7B8301F0E40D80005F269 /* HHAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FC7B82B1F0E40D80005F269 /* HHAlertViewController.xib */; };
 		4FC7B8361F0E41D20005F269 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FC7B8351F0E41D20005F269 /* ViewController.swift */; };
@@ -28,7 +27,6 @@
 		4FC7B8201F0E40B90005F269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4FC7B8271F0E40D80005F269 /* AlertActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionButton.swift; sourceTree = "<group>"; };
 		4FC7B8281F0E40D80005F269 /* AlertActionButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertActionButton.xib; sourceTree = "<group>"; };
-		4FC7B8291F0E40D80005F269 /* HHAlertViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HHAlertViewController.podspec; sourceTree = "<group>"; };
 		4FC7B82A1F0E40D80005F269 /* HHAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHAlertViewController.swift; sourceTree = "<group>"; };
 		4FC7B82B1F0E40D80005F269 /* HHAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHAlertViewController.xib; sourceTree = "<group>"; };
 		4FC7B8351F0E41D20005F269 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 			children = (
 				4FC7B8271F0E40D80005F269 /* AlertActionButton.swift */,
 				4FC7B8281F0E40D80005F269 /* AlertActionButton.xib */,
-				4FC7B8291F0E40D80005F269 /* HHAlertViewController.podspec */,
 				4FC7B82A1F0E40D80005F269 /* HHAlertViewController.swift */,
 				4FC7B82B1F0E40D80005F269 /* HHAlertViewController.xib */,
 			);
@@ -159,7 +156,6 @@
 				4FC7B81F1F0E40B90005F269 /* LaunchScreen.storyboard in Resources */,
 				4FC7B81C1F0E40B90005F269 /* Assets.xcassets in Resources */,
 				4FC7B8301F0E40D80005F269 /* HHAlertViewController.xib in Resources */,
-				4FC7B82E1F0E40D80005F269 /* HHAlertViewController.podspec in Resources */,
 				4FC7B81A1F0E40B90005F269 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +334,7 @@
 				4FC7B8251F0E40BA0005F269 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
