@@ -8,7 +8,7 @@
 
 import UIKit
 
-open class HHAlertViewController: UIViewController {
+public class HHAlertViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
@@ -41,7 +41,7 @@ open class HHAlertViewController: UIViewController {
         }
     }
     
-    convenience init(title: String, message: String, actions: [AlertActionButton]) {
+    convenience public init(title: String, message: String, actions: [AlertActionButton]) {
         self.init()
         self.titleString = title
         self.message = message
@@ -78,7 +78,7 @@ open class HHAlertViewController: UIViewController {
             }
         }
     }
-
+    
 }
 extension HHAlertViewController: UICollectionViewDataSource {
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

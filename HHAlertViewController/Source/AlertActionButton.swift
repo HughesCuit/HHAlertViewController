@@ -8,17 +8,19 @@
 
 import UIKit
 
+
+public typealias AlertViewAction = (AlertActionButton) -> ()
+
 open class AlertActionButton: UIButton {
-    var action: AlertAction = { _ in }
+    var action: AlertViewAction = { _ in }
     var title = ""
     
-    typealias AlertAction = (AlertActionButton) -> ()
     
     func actionOnTapped() {
         action(self)
     }
     
-    fileprivate class func configuredButton(title: String, action: @escaping AlertAction) -> AlertActionButton {
+    fileprivate class func configuredButton(title: String, action: @escaping AlertViewAction) -> AlertActionButton {
         guard let btn = Bundle.main.loadNibNamed("AlertActionButton", owner: nil, options: nil)?.first as? AlertActionButton else {
             return AlertActionButton()
         }
@@ -41,6 +43,6 @@ open class AlertActionButton: UIButton {
     }
 }
 
-func AlertAction(title: String, action: @escaping AlertActionButton.AlertAction) -> AlertActionButton {
+public func AlertAction(title: String, action: @escaping AlertViewAction) -> AlertActionButton {
     return AlertActionButton.configuredButton(title: title, action: action)
 }
