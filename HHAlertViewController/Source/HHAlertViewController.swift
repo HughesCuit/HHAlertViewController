@@ -50,7 +50,7 @@ public class HHAlertViewController: UIViewController {
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         let classString = String(describing: type(of: self))
-        if Bundle.main.path(forResource: classString, ofType: "nib") == nil {
+        if Bundle(for: HHAlertViewController.classForCoder()).path(forResource: classString, ofType: "nib") == nil {
             super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
             
         } else {
