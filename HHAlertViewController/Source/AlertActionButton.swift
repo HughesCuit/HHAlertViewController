@@ -21,7 +21,7 @@ open class AlertActionButton: UIButton {
     }
     
     fileprivate class func configuredButton(title: String, action: @escaping AlertViewAction) -> AlertActionButton {
-        guard let btn = Bundle.main.loadNibNamed("AlertActionButton", owner: nil, options: nil)?.first as? AlertActionButton else {
+        guard let btn = Bundle(for: self.classForCoder()).loadNibNamed("AlertActionButton", owner: nil, options: nil)?.first as? AlertActionButton else {
             return AlertActionButton()
         }
         btn.title = title
