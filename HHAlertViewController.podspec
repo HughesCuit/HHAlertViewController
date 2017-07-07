@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "HHAlertViewController/Source/*.{xib}"
+  s.resources = "HHAlertViewController/Source/*.{xib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
